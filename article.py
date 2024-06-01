@@ -7,3 +7,10 @@ class Article:
     
     def __str__(self) -> str:
         return f"Title :{self.title}\nLink:{self.link}\nSummary:{self.summary}"
+    
+    def to_dict(self):
+        return {
+            'title':self.title,
+            'link':self.link,
+            'summary':self.summary
+        }
